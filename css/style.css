@@ -1,0 +1,904 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+html,body{
+	height: 100%;
+    
+}
+
+/*
+body{
+    overflow-x: hidden;
+}
+*/
+
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+
+ header{
+     height: 100px;
+     background-color: black;
+     color: white;
+ }
+
+ .logo{
+     width: 200px;
+    
+ }
+ .logo img{
+    width: 250px;
+    height: 85px;
+}
+
+/*menu desktop */
+.menu-desktop{
+    flex:1 ;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    color:white;
+    padding: 18px;
+}
+
+nav li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+nav li{
+   
+    font-size: 18px;
+    
+}
+
+nav li a:hover{
+    color:#2abdf0;
+}
+
+
+/* Menu Mobile */
+
+
+ 
+.btn-menu-mobile{
+    border:none;
+    outline-style: none;
+    display: none;
+    background:none;
+    box-shadow: none;
+    position: relative;
+    right: 8%;
+    top:-15%;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+ .btn-menu-mobile i{
+   font-size: 35px;
+    color: white;
+    cursor: pointer;
+    
+   
+}
+
+
+
+nav.menu-mobile ul{
+	display: none;
+	width: 100%;
+	left: 0;
+    margin-top: 20px;
+	z-index: 999;
+	position: absolute;
+	text-align: left;
+	background-color: #080808;
+    
+}
+
+nav.menu-mobile li{
+	font-size: 15px;
+	padding:15px 20px;
+    font-family:'Open Sans', sans-serif;
+    
+}
+
+nav.menu-mobile li a{
+	color: #fbf8f8;
+	text-decoration: none;
+}
+
+
+
+.btnMenu_close ul{
+    text-align: left;
+}
+
+.menu-mobile ul li:hover{
+    background-color:#2abdf0;
+    
+}
+
+/* Banner e sliders */
+
+.banner{
+    height:calc(100vh - 100px);
+    
+    background-color:#333;
+    background-image: url(../image1/pexels-bura-lampadas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  
+    
+ 
+}
+
+.banner .sliders{
+    width: 100vw;
+    height: 100%;
+}
+
+.banner .slider{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner #sliderarea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+
+   
+  
+}
+
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+ 
+}
+
+
+.banner h1 span{
+    color:#2abdf0;
+}
+
+.banner p{
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+.banner p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:18px;
+}
+
+
+
+.banner a{
+    display: block;
+    background-color: #34af23;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-decoration: none;
+    padding:10px 30px;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+
+.banner .insta a{
+    display: block;
+    background-color: #af23a8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-decoration: none;
+    padding:10px 30px;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.banner .tel a{
+    display: block;
+    background-color: #e97406;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-decoration: none;
+    padding:10px 30px;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+
+
+.slider--controls{
+    position: absolute;
+    z-index: 99;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+
+}
+
+
+#proximo, #voltar{
+
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: 23%;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgb(42, 189, 240,0.8);
+        opacity: 0;
+        transition: 0,5s ease;
+      }
+
+#proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#proximo:hover, #voltar:hover{
+    background-color: rgb(240, 138, 42,0.8);
+    
+}
+
+#proximo:hover, #voltar:hover{
+    opacity: 1;
+}
+
+
+/* Quem somos*/
+
+
+.quem-somos{
+  
+    height: 400px;
+}
+
+
+
+.quem-somos .imagem-somos{
+    max-width: 1140px;
+    position: absolute;
+    right:60%;
+    margin-right: 50px;
+}
+
+.quem-somos .section-title{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.quem-somos .section-desc{
+    
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+.imagem-somos img{
+    width: 330px;
+    height: 330px;
+    margin-top: -120px;
+
+}
+/* Serviços */
+
+
+.serv{
+    height: 100%;
+    width: 100%;
+    background-color: #1f1b40;
+
+}
+
+.serv .title-services{
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.section-services{
+    display: flex;
+}
+
+.section-serv{
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 60px 12px;
+    
+    
+}
+
+.section-serv h3{
+    margin-top:15px;
+    margin-bottom: 10px;
+
+}
+
+/*Trabalhos realizados*/
+.jobs{
+    margin: 120px 0;
+}
+.title-jobs{
+    text-align: center;
+    padding-top: 45px;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.jobs ul{
+    max-width: 1140px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px auto;
+    
+
+}
+
+.jobs .min{
+    width: 290px;
+    padding: 10px;
+    
+}
+
+.jobs img{
+    width: 840px;
+    height: 240px;
+}
+
+
+.saiba a{
+    position: absolute;
+    right: 45%;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    border:2px solid #f08a2a;
+    color: #f08a2a;
+    
+}
+
+.lbox:target{
+    opacity: 1;
+    visibility: visible;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display: block;
+    background-color: rgba(10, 10, 10,0.7);
+    position: fixed;
+    
+}
+
+.lbox{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    
+    
+}
+
+.box-img img{
+    width: 750px;
+   height: 630px;
+   position: relative;
+   margin-top: 2px;
+   left:20%;
+  
+
+}
+
+.jobs ul li img{
+    transition: all .2s ease-in-out;
+}
+
+.jobs ul li img:hover{
+    transform:scale(1.2);
+}
+
+.box-img{
+    width: 1000px;
+   margin: auto;
+}
+
+.btn{
+    color:white;
+    font-family:'Arial';
+    text-decoration:none;
+    position: absolute;
+    width:30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#prev{
+    left:23%;
+    top: 47%;
+}
+
+#next{
+    right: 12%;
+    top:47%;
+}
+#close{
+    left:23%;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* Formulario */
+
+#iform h3{
+    margin-top: 70px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#iform i {
+   position: relative;
+   right: 13%;
+
+}
+
+#iform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  padding: 25px 0;
+  color:black;
+  margin: 110px;
+
+}
+
+#iform input{
+    width: 380px;
+    display:block;
+    padding: 6px 4px;
+    margin:15px 0;
+    border: 2px solid #f08a2a ;
+    background: none;
+    outline: none;
+    font-size: 16px;
+
+}
+
+textarea{
+    width: 380px;
+    height:100px;
+    margin: 15px 0;
+    resize: none;
+    border: 2px solid #f08a2a ;
+    background: none;
+    outline: none;
+    padding:3px;
+    font-size: 17px;
+}
+.btn-cont{
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+.rodape{
+    max-width: 1140px;
+    margin: 10px auto; 
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+
+.menu-rodape ul{
+    display: block;
+    margin-top: 12px;
+    padding: 8px ;
+    cursor: pointer;
+    
+}
+
+.menu-rodape nav li a{
+    font-size: 12px;
+    margin-left: 80px;
+    font-weight: normal;
+    color:white;
+
+}
+
+.rodape-icones {
+    position: relative;
+    right: 30%;
+}
+
+.rodape-icones a i{
+    padding-left: 20px;
+    color: white;
+    
+    
+}
+
+
+/* Inicio do Media Query */
+
+@media (min-width:451px) and (max-width:800px){
+    nav.menu-mobile {
+        display: block;
+    }
+    .btn-menu-mobile, .btn-menu-mobile i{
+        display: block;
+    }
+     
+    
+
+    .logo{
+        padding: 6px;
+    }
+    .logo img{
+        width: 180px;
+        height: 70px;
+        margin-bottom: 19px;
+        
+    }
+
+    .menu-desktop nav {
+        display: none;
+    }
+
+    header{
+        height: 80px;
+
+    }
+
+    
+.banner h1{
+    font-size: 20px;
+  
+ 
+}
+
+
+.banner p{
+    font-size:11px;
+}
+
+#proximo, #voltar{
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 37%;
+}
+.imagem-somos img{
+     width: 230px;
+     height: 230px;
+     padding-right: 40px;
+    
+}
+
+
+
+.quem-somos .section-desc{
+    padding: 0 10px;
+
+}
+
+.section-services{
+    flex-wrap: wrap;
+}
+
+
+.section-serv{
+   min-width: 50%;
+}
+
+.lbox:target{
+    
+    width:100%;
+    height:95%;
+    
+}
+
+.box-img img{
+  width: 500px;
+   height: 500px;
+   position: relative;
+   left: -1%;
+   
+
+}
+
+.btn{
+    z-index: 999;
+}    
+
+#prev{
+    font-size: 50px;
+    left:1%;
+    top: 40%;
+    
+    
+}
+
+#next{
+    font-size: 50px;
+    right: 1%;
+    top:40%;
+
+}
+#close{
+   
+    left:1%;
+    font-size: 35px;
+    margin-top: 12px;
+    
+    
+}
+#iform i {
+    position: relative;
+    left: -25%;
+ 
+ }
+}
+
+
+
+
+@media  (min-width:300px) and (max-width:450px){
+    nav.menu-mobile {
+        display: block;
+    }
+    .btn-menu-mobile, .btn-menu-mobile i{
+        display: block;
+    }
+     
+    .logo{
+        padding: 6px;
+    }
+    .logo img{
+        width: 130px;
+        height: 70px;
+        margin-bottom: 17px;
+        
+    }
+
+    .menu-desktop nav {
+        display: none;
+    }
+
+    header{
+        height: 83px;
+
+    }
+
+    
+.banner h1{
+    font-size: 15px;
+    padding:5px;
+    
+   
+}
+
+
+.banner p{
+    font-size:10px;
+    margin-left: 10px;
+}
+
+.banner a{
+    padding:8px 20px;
+}
+
+
+.banner .insta a{
+    padding:8px 20px;
+}
+
+.banner .tel a{
+    padding:8px 20px;
+   
+}
+
+
+#proximo, #voltar{
+    font-size: 18px;
+    padding: 7px;
+    margin-top: 45%;
+}
+
+.quem-somos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.quem-somos .section-title{
+    margin-top: 30px;
+    font-size: 17px;
+    margin-left: 130px;
+    text-align: center;
+    
+}
+
+.quem-somos .section-desc{
+    margin-top: -150px;
+}
+.imagem-somos img{
+     width: 200px;
+     height: 200px;
+     margin-top: 9px;
+    margin-right: -180px;
+
+}
+
+.section-services{
+    flex-wrap: wrap;
+}
+.section-services {
+    display: flex;
+    flex-direction: column;
+}
+
+.quem-somos .section-desc{
+    padding: 0 10px;
+}
+.lbox:target{
+    
+    width:100%;
+    height:100%;
+    
+}
+
+.box-img img{
+    width: 320px;
+    height: auto;
+    position: relative;
+    left:2%;
+    margin-top: 45px;
+     
+
+}    
+
+.btn{
+    z-index: 999;
+}
+
+#prev{
+    left: 1%;
+    top: 25%;
+}
+
+#next{
+    right: 1%;
+    top:25%;
+}
+
+#close{
+    left: 1%;
+    font-size: 25px;
+    margin-top: 18px;
+}
+    
+}
+
+
+ #iform h3{
+    font-size: 17px;
+    text-align: center;
+}
+#iform input {
+    width: 330px;
+}
+textarea{
+    width: 330px;
+    
+}
+
+.menu-rodape nav li a{
+    font-size: 12px;
+    margin-left: 20px;
+    
+
+}
+
+.rodape-icones {
+    position: relative;
+    right: 3%;
+}
+
+
+/*
+.rodape-icones a i{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}*/
+
+.rodape-icones a {
+    list-style: none;
+    text-decoration: none;
+    
+
+}
